@@ -2,6 +2,7 @@ import { Meteors } from "@/components/ui/meteors";
 import { CustomTextScramble as CTS } from "./components/CustomTextScramble";
 import { GradientScrollProgress as GSP } from "./components/GradientScrollProgress";
 import { InfiniteCarousel as IC } from "./components/InfiniteCarousel";
+import { ShadTable as ST } from "./components/ShadTable";
 
 export default function Home() {
   return (
@@ -13,14 +14,9 @@ export default function Home() {
           </h1>
         </header>
         <main>
-          <div className="fill-amber-50"><IC /></div>
-          <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
-          <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
-          <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
-          <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
-          <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
-          <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
-          <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
+          <div className="min-h-screen"></div>
+          <div className="min-h-screen"><IC /></div>
+          <div className="min-h-screen"><ST /></div>
           <Meteors number={20} />
         </main>
         <footer className="bg-cyan-500 text-center text-5xl">
