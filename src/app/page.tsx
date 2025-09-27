@@ -1,3 +1,4 @@
+import { Meteors } from "@/components/ui/meteors";
 import { CustomTextScramble as CTS } from "./components/CustomTextScramble";
 import { GradientScrollProgress as GSP } from "./components/GradientScrollProgress";
 import { InfiniteCarousel as IC } from "./components/InfiniteCarousel";
@@ -20,6 +21,7 @@ export default function Home() {
           <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
           <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
           <div className="bg-amber-700 h-[400px] text-4xl mb-3.5">HELLO</div>
+          <Meteors number={20} />
         </main>
         <footer className="bg-cyan-500 text-center text-5xl">
           Footer
