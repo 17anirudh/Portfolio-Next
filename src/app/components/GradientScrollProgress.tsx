@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { ScrollProgress } from '@/components/motion-primitives/scroll-progress';
 
 export function ScrollProgressBasic3(children: React.ReactNode) {
-  const containerRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null!);
 
   return (
     <div className='h-[350px] overflow-auto px-8 pb-16 pt-16' ref={containerRef}>
