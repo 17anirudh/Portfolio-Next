@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth overflow-y-scroll no-scrollbar">
-      <body className="bg-neutral-900 text-neutral-100 min-h-screen min-w-screen">
+      <body className=" text-neutral-100 min-h-screen min-w-screen">
         {children}
       <Toaster richColors closeButton />
       </body>
