@@ -1,28 +1,58 @@
-import { Meteors } from "@/components/ui/meteors";
-import { CustomTextScramble as CTS } from "./components/CustomTextScramble";
-import { GradientScrollProgress as GSP } from "./components/GradientScrollProgress";
-import { InfiniteCarousel as IC } from "./components/InfiniteCarousel";
-import { ShadTable as ST } from "./components/ShadTable";
+import { TracingBeam } from "@/components/ui/tracing-beam";
+import { InfiniteCarousel } from "./components/InfiniteCarousel";
+import { ExpandableCardDemo } from "./components/Projects";
+import { H1Typing } from "./components/H1Typing";
+import { H2Typing } from "./components/H2Typing";
+import {TooltipDemo as Tooltip} from "./components/ToolTip";
+import Info from "./components/Info";
+import { Contact } from "./components/Contact";
 
 export default function Home() {
   return (
-    <>
-      <GSP>
-        <header className="text-center">
-          <h1 className="text-6xl text-neutral-50 cursor-default m-5">
-            <CTS text = "Vedala Anirudh" />
+    <div id="topSection">
+      <TracingBeam className="px-6">
+        <header className="min-h-screen" id="headerSection">
+          <h1 className="text-6xl cursor-default m-5">
+            <H1Typing/>
           </h1>
+          <h2 className="text-4xl m-6">
+            <H2Typing />
+          </h2>
+          <h2 className="text-4xl m-6">
+            Visakhapatnam, India
+          </h2>
         </header>
-        <main>
-          <div className="min-h-screen"></div>
-          <div className="min-h-screen"><IC /></div>
-          <div className="min-h-screen"><ST /></div>
-          <Meteors number={20} />
+        <br />
+        <main id="mainSection">
+          <section className="min-h-screen max-w-screen" id="about">
+            <Info />
+          </section>
+          <section className="min-h-screen max-w-screen" id="skills">
+            <h2 className="text-3xl mb-27">Skills</h2>
+            <InfiniteCarousel />
+          </section>
+          <section className="min-h-screen max-w-screen" id="projects">
+            <h2 className="text-3xl mb-27">Projects</h2>
+            <ExpandableCardDemo />
+          </section>
+          <section className="min-h-screen max-w-screen" id="contact">
+            <h2 className="text-3xl mb-27">Contact me</h2>
+            <Contact />
+          </section>
         </main>
-        <footer className="bg-cyan-500 text-center text-5xl">
-          Footer
-        </footer>
-      </GSP>
-    </>
+      </TracingBeam>
+      <footer className="min-h-64 max-w-screen mt-8" id="footSection">
+        <article className="text-center">
+          <p>Thank you for visiting, I will be happy to hear your reviews 😄.</p>
+          <section className="flex flex-col">
+            <Tooltip display="Home" hover="Click to go back to top" tag="#topSection"/>
+            <Tooltip display="About" hover="Click to scroll to ABOUT section" tag="#about"/>
+            <Tooltip display="Skills" hover="Click to scroll to SKILLS section" tag="#skills"/>
+            <Tooltip display="Projects" hover="Click to scroll to PROJECT section" tag="#projects"/>
+            <Tooltip display="Contact" hover="Click to scroll to CONTACT section" tag="#contact"/>
+          </section>
+        </article>
+      </footer>
+    </div>
   )
 }

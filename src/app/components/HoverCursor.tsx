@@ -1,10 +1,6 @@
-import { Cursor } from '../../components/motion-primitives/cursor';
+import { Cursor } from '@/components/motion-primitives/cursor';
 
-type CursorProps = {
-  children: React.ReactNode;
-};
-
-export function Cursor3({ children }: CursorProps) {
+export function Cursor3() {
   return (
     <div>
       <div className='p-4'>
@@ -26,12 +22,12 @@ export function Cursor3({ children }: CursorProps) {
           }}
         >
           <img
-            src='https://i.pinimg.com/564x/4c/95/69/4c9569ab2928e5ae400a6a34e7c537a0.jpg'
-            alt='Christian Church, Eastern Europe'
-            className='h-40 w-40'
+            src='https://i.ytimg.com/vi/zGVFVK10oDs/maxresdefault.jpg'
+            alt='Dr Lankapalli Bullayya College of Engineering'
+            className='h-63 w-auto'
           />
         </Cursor>
-        {children}
+        <p className='ml-[-9px]'>I study in <span className='underline text-amber-400'>Dr Lankapalli Bullayya College of Engineering</span></p>
       </div>
     </div>
   );
