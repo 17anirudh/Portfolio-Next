@@ -18,7 +18,7 @@ export function ResumeCard() {
       </h2> */}
       <Link 
       className="text-sm border font-light dark:border-white/[0.2] rounded-full mt-4  dark:text-white px-2 py-0.5"
-      href="@/../public/resume.pdf"
+      href="https://raw.githubusercontent.com/17anirudh/media/refs/heads/main/resume.pdf"
       download>Click me to download</Link>
     </div>
   );
