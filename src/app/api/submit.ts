@@ -1,10 +1,9 @@
 "use server";
 import z from "zod";
-import { formSchema } from "./utils/zodSchema";
+import { formSchema } from "../utils/zodSchema";
 
 export async function submit(values: z.infer<typeof formSchema>) {
     const result = formSchema.safeParse(values);
-    console.log(result.data, result);
     if(!result.success) {
         return {
             status: 'error',

@@ -15,7 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
 import { formSchema } from "../utils/zodSchema";
 import { useForm } from "react-hook-form";
-import { submit } from "../submit";
+import { submit } from "@/app/api/submit";
 import { toast } from "sonner";
 
 export function Contact() {
