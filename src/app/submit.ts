@@ -45,7 +45,7 @@ export async function submit(values: z.infer<typeof formSchema>) {
             };
 		}
     } 
-    catch (error) {
+    catch {
         return {
             status: 'error',
             message: 'Failed to submit your message',

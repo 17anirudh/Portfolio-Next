@@ -1,12 +1,18 @@
 import { Cursor3 } from "./HoverCursor"
+import { Crimson_Pro } from "next/font/google";
+
+const Serif = Crimson_Pro({
+  subsets: ['latin'],
+  weight: '300'
+});
 
 export default function Info() {
     return (
         <>
             <section>
-                <h2 className="text-3xl underline">About me</h2>
+                <h2 className={`text-3xl underline ${Serif.className}`}>About me</h2>
                 <Cursor3 />
-                <p className="text-wrap">
+                <p className={`text-wrap font-inherit`}>
                     I love working on enhancing my skills and knowledge in computer science, 
                     with a primary focus on Data Engineering, Machine Learning, Deep Learning, 
                     and Full Stack Website Development. Currently senior pursuing an 

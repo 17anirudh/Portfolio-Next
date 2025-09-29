@@ -1,4 +1,5 @@
 import { Cursor } from '@/components/motion-primitives/cursor';
+import Image from 'next/image';
 
 export function Cursor3() {
   return (
@@ -21,13 +22,14 @@ export function Cursor3() {
             bounce: 0.01,
           }}
         >
-          <img
-            src='https://i.ytimg.com/vi/zGVFVK10oDs/maxresdefault.jpg'
-            alt='Dr Lankapalli Bullayya College of Engineering'
-            className='h-63 w-auto'
-          />
+        <Image
+          src="https://i.ytimg.com/vi/zGVFVK10oDs/maxresdefault.jpg"
+          alt="Dr Lankapalli Bullayya College of Engineering"
+          height={252}
+          width={448.68}
+        />
         </Cursor>
-        <p className='ml-[-9px]'>I study in <span className='underline text-amber-400'>Dr Lankapalli Bullayya College of Engineering</span></p>
+        <p className='ml-[-9px] font-inherit'>I study in <span className='underline text-amber-400'>Dr Lankapalli Bullayya College of Engineering</span></p>
       </div>
     </div>
   );

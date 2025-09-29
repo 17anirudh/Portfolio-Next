@@ -3,6 +3,7 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "./useOutsideClick";
+import Image from "next/image";
 
 export function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null);
@@ -67,9 +68,10 @@ export function ExpandableCardDemo() {
               className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-neutral-800 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
-                <img
+                <Image
                   width={200}
                   height={200}
+                  quality={100}
                   src={active.src}
                   alt={active.title}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
@@ -124,18 +126,19 @@ export function ExpandableCardDemo() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="font-inherit p-4 flex flex-col hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
-                <img
+                <Image
                   width={100}
                   height={100}
+                  quality={100}
                   src={card.src}
                   alt={card.title}
                   className="h-60 w-full  rounded-lg object-cover object-top"
@@ -200,7 +203,7 @@ const cards = [
   {
     description: "Hash CRUD",
     title: "Url shortner",
-    src: "https://github.com/17anirudh/media/raw/main/Url-shortner.png",
+    src: "https://raw.githubusercontent.com/17anirudh/media/refs/heads/main/Url-shortner.png",
     ctaText: "Visit",
     ctaLink: "https://github.com/17anirudh/URL-Shortner",
     content: () => {
@@ -215,7 +218,7 @@ const cards = [
   {
     description: "Tree Classifiers",
     title: "NIDS Binary Classifier",
-    src: "https://github.com/17anirudh/media/raw/main/Nids-classifier.png",
+    src: "https://raw.githubusercontent.com/17anirudh/media/refs/heads/main/Nids-classifier.png",
     ctaText: "Visit",
     ctaLink: "https://github.com/17anirudh/NIDS",
     content: () => {
@@ -230,7 +233,7 @@ const cards = [
   {
     description: "LLMs",
     title: "Ats Score Checker",
-    src: "https://github.com/17anirudh/ATS-Score/raw/main/ss.png",
+    src: "https://raw.githubusercontent.com/17anirudh/media/refs/heads/main/Ats-score.png",
     ctaText: "Visit",
     ctaLink: "https://github.com/17anirudh/ATS-Score",
     content: () => {
@@ -244,13 +247,13 @@ const cards = [
   {
     description: "API calls",
     title: "Weather Api",
-    src: "https://github.com/17anirudh/media/raw/main/Weather-api.png",
+    src: "https://raw.githubusercontent.com/17anirudh/media/refs/heads/main/Weather-api.png",
     ctaText: "Visit",
     ctaLink: "https://github.com/17anirudh/Weather-API",
     content: () => {
       return (
         <p>
-          This Python program is designed to provide various weather parameters such as temperature, visibility, and humidity, among others, based on the user's specified country and location.
+          This Python program is designed to provide various weather parameters such as temperature, visibility, and humidity, among others, based on the user&#39;s specified country and location.
         </p>
       );
     },
