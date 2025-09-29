@@ -7,6 +7,7 @@ import {TooltipDemo as Tooltip} from "./components/ToolTip";
 import Info from "./components/Info";
 import { Socials } from "./components/Socials";
 import { Contact } from "./components/Contact";
+import { ResumeCard } from "./components/ResumeCard";
 
 import { Pangolin } from "next/font/google";
 import { Crimson_Pro } from "next/font/google";
@@ -29,7 +30,7 @@ export default function Home() {
   return (
     <>
       <TracingBeam className="px-6">
-        <header className={`min-h-screen ${Serif.className}`} id="headerSection">
+        <header className={`min-h-screen ${Serif.className} mb-96`} id="headerSection">
           <h1 className={`text-7xl cursor-default m-5 ${HandWritten.className}`}>
             <H1Typing/>
           </h1>
@@ -41,6 +42,9 @@ export default function Home() {
           </h2>
           <section>
             <Socials />
+          </section>
+          <section>
+            <ResumeCard />
           </section>
         </header>
 
