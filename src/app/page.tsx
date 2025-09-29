@@ -37,7 +37,7 @@ export default function Home() {
           <h2 className="text-4xl m-6">
             <H2Typing />
           </h2>
-          <h2 className={`text-4xl m-6`}>
+          <h2 className="text-4xl m-6">
             Visakhapatnam, India
           </h2>
           <section>
