@@ -1,6 +1,6 @@
 export default async function sitemap() {
     return [{
-        url: '/',
+        url: 'https://portfolio-next-five-ruby.vercel.app/',
         lastModified: new Date()
     }];
 }

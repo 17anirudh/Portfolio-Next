@@ -6,7 +6,7 @@ const webDescription = "Vedala Anirudh is a feverant engineering student, who li
 
 export const metadata: Metadata = {
   description: webDescription,
-  // metadataBase: new URL("/"),
+  metadataBase: new URL("https://portfolio-next-five-ruby.vercel.app/"),
   keywords: [
     "Vedala", "Veed", "Anirudh", "Vedala Anirudh", "Anirudh Vedala",
     "VEDALA", "VEED", "ANIRUDH", "VEDALA ANIRUDH", "ANIRUDH VEDALA",
@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   },
   openGraph: {
     description: webDescription,
-    // images: 
   }
 };
 
