@@ -4,7 +4,7 @@ import Image from 'next/image';
 export function Cursor3() {
   return (
     <div>
-      <div className='p-4'>
+      <div className='pb-4 pt-4'>
         <Cursor
           attachToParent
           variants={{
@@ -29,7 +29,7 @@ export function Cursor3() {
           width={448.68}
         />
         </Cursor>
-        <p className='ml-[-9px] font-inherit'>I study in <span className='underline text-amber-400'>Dr Lankapalli Bullayya College of Engineering</span></p>
+        <p className='font-inherit'><span className='underline text-amber-400'>Dr Lankapalli Bullayya College of Engineering 	&#40;DLBCE&#41;</span> student</p>
       </div>
     </div>
   );

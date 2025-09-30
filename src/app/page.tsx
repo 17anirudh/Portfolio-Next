@@ -31,16 +31,16 @@ export default function Home() {
     <>
       <TracingBeam className="px-6">
         <header className={`min-h-screen ${Serif.className} mb-96`} id="headerSection">
-          <h1 className={`text-7xl cursor-default m-5 ${HandWritten.className}`}>
+          <h1 
+          className={`text-4xl m-1 cursor-default sm:text-6xl sm:m-7 ${HandWritten.className}`}>
             <H1Typing/>
           </h1>
-          <h2 className="text-4xl m-6">
+          <h2 className="text-2xl m-1 cursor-default sm:text-4xl sm:m-7">
             <H2Typing />
           </h2>
-          <h2 className="text-4xl m-6">
-            Visakhapatnam, India
-          </h2>
-          <section>
+          <h2 className="text-xl m-1 cursor-default sm:text-3xl sm:m-7">
+            Visakhapatnam, India</h2>
+          <section className="mb-36">
             <Socials />
           </section>
           <section>
@@ -48,7 +48,7 @@ export default function Home() {
           </section>
         </header>
 
-        <main id="mainSection" className={`${SansSerif.className}`}>
+        <main id="mainSection" className={`${SansSerif.className}  mt-44`}>
           <section className="min-h-screen max-w-screen" id="about">
             <Info />
           </section>
@@ -60,13 +60,13 @@ export default function Home() {
             <h2 className={`text-3xl mb-27 ${Serif.className} underline`}>Projects</h2>
             <ExpandableCardDemo />
           </section>
-          <section className="min-h-screen max-w-screen font-inherit" id="contact">
-            <h2 className={`text-3xl mb-27 ${Serif.className} underline`}>Contact me</h2>
+          <section className="min-h-screen max-w-screen font-inherit mt-44" id="contact">
+            <h2 className={`text-3xl mb-12 ${Serif.className} underline`}>Contact me</h2>
             <Contact />
           </section>
         </main>
       
-        <footer className="min-h-64 max-w-screen mt-8" id="footSection">
+        <footer className="min-h-64 max-w-screen mt-44" id="footSection">
           <article className="text-center">
             <p>Thank you for visiting, I will be happy to hear your reviews 😄.</p>
             <section className="flex flex-col items-center justify-center">

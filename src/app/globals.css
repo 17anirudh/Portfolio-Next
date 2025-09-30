@@ -5,6 +5,17 @@
 @tailwind/preflight;
 @tailwind utilities;
 
+/* Hide scrollbar but allow scroll */
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -44,16 +55,6 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
-
-@layer utilities {
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-      .no-scrollbar {
-          -ms-overflow-style: none;  
-          scrollbar-width: none;
-    }
-  }
 
   @theme inline {
   --animate-meteor-effect: meteor 5s linear infinite;
@@ -152,10 +153,8 @@
 }
 
 body {
-background: radial-gradient(circle at 67% 83%, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%),
-radial-gradient(circle at 22% 65%, rgba(30, 16, 16, 0.8), rgba(30, 16, 16, 0) 47%),
-radial-gradient(circle at 80% 30%, rgba(117, 82, 98, 0.7), rgba(117, 82, 98, 0) 50%),
-radial-gradient(circle at 50% 50%, rgba(0, 16, 240, 0.63), rgba(0, 16, 240, 0) 50%),
-radial-gradient(circle at 50% 50%, rgba(17, 173, 212, 0.7), rgba(17, 173, 212, 0) 50%),
-linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background: radial-gradient(circle at 80% 30%, rgba(178, 52, 52, 0.7), rgba(178, 52, 52, 0) 50%),
+  radial-gradient(circle at 50% 50%, rgba(77, 163, 134, 0.7), rgba(77, 163, 134, 0) 50%),
+  radial-gradient(circle at 50% 50%, rgba(75, 0, 130, 0.7), rgba(75, 0, 130, 0) 50%),
+  linear-gradient(to bottom right, rgba(10, 10, 10, 1), rgba(10, 10, 10, 1));
 }
