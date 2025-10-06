@@ -18,7 +18,7 @@ import { useForm } from "react-hook-form";
 import { submit } from "@/app/api/submit";
 import { toast } from "sonner";
 
-export function Contact() {
+export function ReachOut() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {

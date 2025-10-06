@@ -1,4 +1,4 @@
-import { Cursor3 } from "./HoverCursor"
+import { Cursor3 } from "./BullayyaHover"
 import { Crimson_Pro } from "next/font/google";
 
 const Serif = Crimson_Pro({
@@ -6,7 +6,7 @@ const Serif = Crimson_Pro({
   weight: '300'
 });
 
-export default function Info() {
+export default function AboutMe() {
     return (
         <>
             <section>

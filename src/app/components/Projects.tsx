@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "./useOutsideClick";
 import Image from "next/image";
 
-export function ExpandableCardDemo() {
+export function Projects() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null);
   const id = useId();
   const ref = useRef<HTMLDivElement | null>(null);
