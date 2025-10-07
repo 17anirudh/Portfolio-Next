@@ -19,7 +19,7 @@ export default function GlobalNotFound() {
           <Frown/ >
           <h1>404 - Page Not Found</h1>
           <p>This page does not exist.</p>
-          <Link href="/">Return Home</Link>
+          <Link href="/"> Click to Return Home</Link>
         </section>
       </body>
     </html>
