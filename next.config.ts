@@ -14,7 +14,10 @@ const nextConfig: NextConfig = {
         hostname: "i.ytimg.com"
       }
     ]
-  }
+  },
+   experimental: {
+    globalNotFound: true,
+  },
 };
 
 export default nextConfig;
