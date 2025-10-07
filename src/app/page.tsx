@@ -58,7 +58,7 @@ export default function Home() {
       </header>
 
       <main id="mainSection" className={`${SansSerif.className}`}>
-        <section className="min-h-screen max-w-screen pt-20" id="about"><AboutMe /></section>
+        <section className="min-h-screen max-w-screen pt-20 sm:mb-0 mb-27" id="about"><AboutMe /></section>
         <section className="min-h-screen max-w-screen" id="skills">
           <h2 className={`text-3xl mb-27 ${Serif.className} underline text-center`}>Skills</h2>
           <Skills />

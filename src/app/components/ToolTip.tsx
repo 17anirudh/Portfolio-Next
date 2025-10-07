@@ -18,7 +18,7 @@ export function TooltipDemo(props: TipType) {
     <Tooltip>
       <TooltipTrigger asChild>
         <Button variant="link" className="w-fit">
-            <Link href={props.tag} prefetch={false} className="text-neutral-50 sm:text-3xl text-xl" target={props.location}>
+            <Link href={props.tag} prefetch={false} className="text-neutral-50 text-xl" target={props.location}>
               {props.display}
             </Link>
         </Button>
