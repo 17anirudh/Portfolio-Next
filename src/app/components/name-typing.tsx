@@ -1,7 +1,7 @@
 "use client";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 
-export function H1Typing() {
+export function NameTyping() {
   const words = [
     {
       text: "Vedala",

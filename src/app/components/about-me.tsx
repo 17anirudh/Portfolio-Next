@@ -1,4 +1,4 @@
-import { Cursor3 } from "./BullayyaHover"
+import { Cursor3 } from "./college-hover"
 import { Crimson_Pro } from "next/font/google";
 
 const Serif = Crimson_Pro({
