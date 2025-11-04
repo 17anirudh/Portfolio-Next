@@ -4,11 +4,11 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Vedala Anirudh Portfolio',
     short_name: 'Anirudh Portfolio',
-    description: 'Vedala Anirudh is a feverant engineering student, who likes Machine Learning, Deep Learning and Full Stack Web development. He is also a eager learner',
+    description: 'Portfolio website of Vedala Anirudh, who is a feverant engineering student interested in Data Science and Computer Vision',
     start_url: '/',
     display: 'standalone',
-    background_color: '#fff',
-    theme_color: '#fff',
+    background_color: '#22013c',
+    theme_color: '#22013c',
     icons: [
       {
         src: '/favicon.ico',

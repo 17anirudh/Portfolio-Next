@@ -42,7 +42,7 @@ export default function Home() {
           <Link href='#projects' className="hover:text-amber-300">Projects</Link>
           <Link href='#contact' className="hover:text-amber-300">Contact</Link>
         </nav>
-        <section className="flex flex-col md:flex-row mt-20">
+        <section className="flex flex-col flex-wrap md:flex-row mt-20">
           <div id="text-content" className="flex-1">
             <DisplayAvatar />
             <h1 className={`text-4xl m-1 cursor-default sm:text-8xl sm:m-5 ${HandWritten.className}`}>
